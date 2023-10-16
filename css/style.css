@@ -1,0 +1,448 @@
+@charset "UTF-8";
+
+/* Screen
+---------------------------------------------------------------------- */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+
+body {
+  background: rgb(3, 154, 209);
+  background: -moz-linear-gradient(90deg, rgba(3, 154, 209, 1) 0%, rgba(3, 51, 125, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(3, 154, 209, 1) 0%, rgba(3, 51, 125, 1) 100%);
+  background: linear-gradient(90deg, rgba(3, 154, 209, 1) 0%, rgba(3, 51, 125, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#039ad1", endColorstr="#03337d", GradientType=1);
+  font-family: sans-serif;
+}
+
+
+.title-box {
+  text-align: center;
+  margin: 100px auto 50px;
+}
+
+.title-box img {
+  width: 65%;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.title-box h1 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.team-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 85%;
+  margin: auto;
+}
+
+.profile-box {
+  width: 240px;
+  height: 240px;
+  background: #fff;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 10px 10px rbga(115, 193, 255, 0.1);
+  padding: 20px;
+  position: relative;
+}
+
+.profile-box h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 25px;
+  color: #2196f3;
+  margin-bottom: 5px;
+}
+
+.profile-box p {
+  margin: 65px auto 25px;
+  text-align: center;
+  line-height: 24px;
+  color: #555;
+}
+
+.profile-box img {
+  width: 100px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 4px;
+  transition: .5s;
+}
+
+.profile-box img:hover {
+  width: 240px;
+}
+
+.profile-box small {
+  font-size: 14px;
+  color: #555;
+}
+
+
+.main-text {
+  text-transform: uppercase;
+  /* Texte en majuscules */
+  text-align: center;
+  /* Texte centré */
+  font-size: 3vw;
+  /* Taille de police assez grande (ajustez selon vos besoins) */
+  font-family: sans-serif;
+  /* Police d'écriture moderne (ajustez selon vos préférences) */
+  white-space: nowrap;
+  /* Empêche le dernier mot de passer à la ligne */
+  overflow: hidden;
+  /* Masque le débordement du texte */
+  width: 100%;
+  /* Force le texte à rester sur une seule ligne */
+  line-height: 1.2;
+  /* Espacement entre les lignes (ajustez selon vos préférences) */
+  margin-bottom: 200px;
+
+}
+
+.main-text h1 {
+  color: antiquewhite;
+}
+
+#acceuil {
+  font-size: 3vw;
+  /* Taille de police assez grande (ajustez selon vos besoins) */
+  font-family: sans-serif;
+  /* Police d'écriture moderne (ajustez selon vos préférences) */
+  white-space: nowrap;
+  /* Empêche le dernier mot de passer à la ligne */
+  overflow: hidden;
+  /* Masque le débordement du texte */
+  width: 100%;
+  /* Force le texte à rester sur une seule ligne */
+  line-height: 1.2;
+  /* Espacement entre les lignes (ajustez selon vos préférences) */
+  margin-left: 10%;
+}
+
+
+
+
+
+/* Style de la barre de navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Couleur de fond de la barre de navigation */
+  padding: 10px;
+  /* Espacement interne */
+  height: max-content;
+}
+
+.navbarbis {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Couleur de fond de la barre de navigation */
+  padding: 10px;
+  /* Espacement interne */
+  height: max-content;
+  margin-bottom: 2%;
+}
+
+.leftBis {
+  display: flex;
+  align-items: center;
+}
+
+.left-imageBis {
+  width: 50%;
+  /* Vous pouvez ajuster la largeur selon vos besoins */
+  margin-right: 10px;
+}
+
+#accueil {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 200%;
+  color: antiquewhite;
+}
+
+#accueil:hover {
+  cursor: pointer;
+}
+
+
+
+/* Style de la première image à gauche */
+.left {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  /* Aligner les images de droite à droite */
+}
+
+.left-image {
+  margin-right: auto;
+  /* Pousse la première image tout à gauche */
+  width: 20%;
+}
+
+/* Style du conteneur des deux images de droite (empilées l'une au-dessus de l'autre) */
+.right-images {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  /* Aligner les images de droite à droite */
+}
+
+/* Style des images de droite */
+.right-images img {
+  margin-top: 5px;
+  /* Espacement entre les deux images de droite */
+  width: 20%;
+}
+
+
+/* Style du bouton */
+.button-container {
+  display: flex;
+  justify-content: center;
+  /* Centre les boutons horizontalement dans le conteneur */
+  margin-top: 10px;
+  /* Espacement entre les deux rangées de boutons */
+}
+
+.button {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 2vw;
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+  margin: 5px;
+  /* Espacement entre les boutons dans la même rangée */
+  width: 30%;
+  /* Largeur des boutons */
+}
+
+/* Style au survol du bouton */
+.button:hover {
+  cursor: pointer;
+  /* Couleur de fond au survol */
+}
+
+/* Style pour les petits écrans (largeur maximale) */
+@media screen and (max-width: 800px) {
+  .button-container {
+    flex-direction: column;
+    /* Empile les boutons les uns au-dessus des autres */
+    align-items: center;
+    /* Centre les boutons verticalement */
+  }
+
+  /* Ajustements de style pour les boutons sur les petits écrans */
+  .button {
+    font-size: 3vw;
+    /* Taille de police plus petite (ajustez selon vos besoins) */
+    width: 50%;
+  }
+
+  .team-row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+.mainBis {
+  display: flex;
+  flex-wrap: wrap;
+  /* Permet de passer à une disposition verticale sur les écrans étroits */
+}
+
+.leftPart {
+  flex: 1;
+}
+
+.rightPart {
+  flex: 1;
+  /* Partage l'espace disponible à parts égales entre leftPart et rightPart */
+}
+
+.paragraph {
+  padding: 20px;
+  color: antiquewhite;
+  text-align: justify;
+}
+
+.paragraph h1 {
+  font-size: 250%;
+  /* Augmente la taille de la police du titre h1 */
+  padding-bottom: 1%;
+}
+
+@media (max-width: 768px) {
+
+  .leftPart,
+  .rightPart {
+    flex: 100%;
+    /* Sur les écrans étroits, passe à une disposition verticale à 100% de largeur */
+  }
+
+  .paragraph h1 {
+    font-size: 5vw;
+    /* Augmente la taille de la police du titre h1 */
+    padding-bottom: 1%;
+  }
+
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .form{
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.container .form h3 {
+  color: #fff;
+  font-size: 2vw;
+  font-weight: 600;
+  margin-bottom: 2vw;
+}
+
+.container .form input, textarea{
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 16px;
+  color: #fff;
+}
+
+.container .form input::placeholder, textarea::placeholder{
+  color: #bbb;
+}
+
+.container .form button{
+  padding: 15px;
+  background: #fff;
+  color: #000000;
+  font-size: 18px;
+  border: 0;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  font-weight: 700;
+  width: 150px;
+  margin: 20px auto 0;
+}
+
