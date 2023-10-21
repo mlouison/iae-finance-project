@@ -7,20 +7,33 @@ document.addEventListener("DOMContentLoaded", function() {
     let who = document.getElementById("who");
     let contact = document.getElementById("contact");
     let boutonMail = document.getElementById("sendMail");
+    let hamburger = document.getElementById("hamburger");
+    let navlinks = this.querySelector(".nav-links");
+    let navAccueil = document.getElementById("navAccueil");
+    let navProjet = document.getElementById("navProjet");
+    let navQui = document.getElementById("navQui");
+    let navContact = document.getElementById("navContact");
+    let navFaq = document.getElementById("navFaq");
 
     document.addEventListener("click", function(e) {
-        if(e.target == accueil) {
+        if(e.target == accueil || e.target == navAccueil) {
             window.location.href = "index.html";
+        
         }
-        if(e.target == projet) {
+        if(e.target == projet || e.target == navProjet) {
             window.location.href = "projet.html";
         }
-        if(e.target == who){
+        if(e.target == who || e.target == navQui){
             window.location.href = "qui.html";
         }
-        if(e.target == contact){
+        if(e.target == contact || e.target == navContact){
             window.location.href = "contact.html";
         }
+        if(e.target == hamburger){
+            navlinks.classList.toggle("mobile-menu");
+            
+        }
+
         if(e.target == boutonMail){
             let nom = document.getElementById("nom").value;
             let prenom = document.getElementById("prenom").value;
