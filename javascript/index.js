@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function() {
             
         }
 
-        if(e.target == faq){
+        if(e.target == btnFaq){
             window.location.href = "faq";
         }
 
