@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let toggles = document.querySelectorAll(".toggle");
     let contentDiv = document.querySelectorAll(".content");
     let icons = document.querySelectorAll(".icon");
+    let btnFaq = document.getElementById("faq");
     for(let i = 0; i < toggles.length; i++){
         toggles[i].addEventListener("click", function(){
             if(parseInt(contentDiv[i].style.height) != contentDiv[i].scrollHeight){
@@ -44,21 +45,25 @@ document.addEventListener("DOMContentLoaded", function() {
 
     document.addEventListener("click", function(e) {
         if(e.target == accueil || e.target == navAccueil) {
-            window.location.href = "index.html";
+            window.location.href = "index";
         
         }
         if(e.target == projet || e.target == navProjet) {
-            window.location.href = "projet.html";
+            window.location.href = "projet";
         }
         if(e.target == who || e.target == navQui){
-            window.location.href = "qui.html";
+            window.location.href = "qui";
         }
         if(e.target == contact || e.target == navContact){
-            window.location.href = "contact.html";
+            window.location.href = "contact";
         }
         if(e.target == hamburger){
             navlinks.classList.toggle("mobile-menu");
             
+        }
+
+        if(e.target == faq){
+            window.location.href = "faq";
         }
 
         if(e.target == boutonMail){
