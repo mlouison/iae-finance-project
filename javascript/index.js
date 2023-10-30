@@ -47,24 +47,24 @@ document.addEventListener("DOMContentLoaded", function() {
 
     for(let i = 0; i < contactus.children.length; i++){
         contactus.children[i].addEventListener("click", function(){
-            window.location.href = "contact";
+            window.location.href = "contact.html";
         });
     }
 
 
     document.addEventListener("click", function(e) {
         if(e.target == accueil || e.target == navAccueil) {
-            window.location.href = "index";
+            window.location.href = "index.html";
         
         }
         if(e.target == projet || e.target == navProjet) {
-            window.location.href = "projet";
+            window.location.href = "projet.html";
         }
         if(e.target == who || e.target == navQui){
-            window.location.href = "qui";
+            window.location.href = "qui.html";
         }
         if(e.target == contact || e.target == navContact || e.target == contactus){
-            window.location.href = "contact";
+            window.location.href = "contact.html";
         }
         if(e.target == hamburger){
             navlinks.classList.toggle("mobile-menu");
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         if(e.target == btnFaq){
-            window.location.href = "faq";
+            window.location.href = "faq.html";
         }
 
 
