@@ -44,6 +44,14 @@ document.addEventListener("DOMContentLoaded", function() {
         
     }
 
+
+    for(let i = 0; i < contactus.children.length; i++){
+        contactus.children[i].addEventListener("click", function(){
+            window.location.href = "contact";
+        });
+    }
+
+
     document.addEventListener("click", function(e) {
         if(e.target == accueil || e.target == navAccueil) {
             window.location.href = "index";
