@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let contentDiv = document.querySelectorAll(".content");
     let icons = document.querySelectorAll(".icon");
     let btnFaq = document.getElementById("faq");
-    let contactus = document.getElementsByClassName("contact")[0];
+    let contactus = document.getElementsByClassName("contactus")[0];
     for(let i = 0; i < toggles.length; i++){
         toggles[i].addEventListener("click", function(){
             if(parseInt(contentDiv[i].style.height) != contentDiv[i].scrollHeight){
