@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let contentDiv = document.querySelectorAll(".content");
     let icons = document.querySelectorAll(".icon");
     let btnFaq = document.getElementById("faq");
+    let contactus = document.getElementsByClassName("contact")[0];
     for(let i = 0; i < toggles.length; i++){
         toggles[i].addEventListener("click", function(){
             if(parseInt(contentDiv[i].style.height) != contentDiv[i].scrollHeight){
@@ -54,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if(e.target == who || e.target == navQui){
             window.location.href = "qui";
         }
-        if(e.target == contact || e.target == navContact){
+        if(e.target == contact || e.target == navContact || e.target == contactus){
             window.location.href = "contact";
         }
         if(e.target == hamburger){
@@ -65,6 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if(e.target == faq){
             window.location.href = "faq";
         }
+
 
         if(e.target == boutonMail){
             let nom = document.getElementById("nom").value;
