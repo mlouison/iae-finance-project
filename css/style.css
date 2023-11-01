@@ -15,11 +15,7 @@
 
 
 body {
-  background: rgb(3, 154, 209);
-  background: -moz-linear-gradient(90deg, rgba(3, 154, 209, 1) 0%, rgba(3, 51, 125, 1) 100%);
-  background: -webkit-linear-gradient(90deg, rgba(3, 154, 209, 1) 0%, rgba(3, 51, 125, 1) 100%);
-  background: linear-gradient(90deg, rgba(3, 154, 209, 1) 0%, rgba(3, 51, 125, 1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#039ad1", endColorstr="#03337d", GradientType=1);
+  background: #f7f7f7;
   font-family: 'Poppins',sans-serif;
 }
 
@@ -38,7 +34,7 @@ body {
 .title-box h1 {
   font-size: 40px;
   font-weight: 600;
-  color: #fff;
+  color: #2196f3;
   margin-bottom: 20px;
 }
 
@@ -53,7 +49,8 @@ body {
 .profile-box {
   width: 240px;
   height: 240px;
-  background: #fff;
+ 
+  box-shadow: 0 15px 25px rgba(0, 0, 50, 0.2);
   border-radius: 4px;
   margin-bottom: 30px;
   box-shadow: 0 10px 10px 10px rbga(115, 193, 255, 0.1);
@@ -120,7 +117,8 @@ body {
 }
 
 .main-text h1 {
-  color: #fff;
+  margin-top: 50px;
+  color: #000;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -147,7 +145,13 @@ body {
 /* Style de la barre de navigation */
 .navbar {
   /*position: absolute;*/
-  padding: 50px;
+
+  background: rgba(3, 150, 243);
+  background: -moz-linear-gradient(90deg, rgba(3, 150, 243, 1) 0%, rgba(3, 154, 209, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(3, 150, 243, 1) 0%, rgba(3, 154, 209, 1) 100%);
+  background: linear-gradient(90deg, rgba(3, 150, 243, 1) 0%, rgba(3, 154, 209, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#039ad1", endColorstr="#03337d", GradientType=1);
+  padding: 30px;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -177,12 +181,12 @@ body {
 }
 
 .navbar .nav-links ul li a:hover{
-  color: #2196f3;
+  color: #151515;
   font-weight: 600;
 }
 
 .navbar .nav-links ul li.active a{
-  color: #2196f3;
+  color: #151515;
   font-weight: 600;
   
 }
@@ -311,7 +315,7 @@ body {
 
 .paragraph {
   padding: 20px;
-  color: #fff;
+  color: #000;
   text-align: justify;
 }
 
@@ -319,6 +323,7 @@ body {
   font-size: 250%;
   /* Augmente la taille de la police du titre h1 */
   padding-bottom: 1%;
+  font-weight: 500;
 }
 
 
@@ -331,7 +336,8 @@ body {
 }
 
 .container .form{
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(240, 240, 240, 0.8);
+  box-shadow: 0 15px 25px rgba(0, 0, 50, 0.2);
   display: flex;
   flex-direction: column;
   padding: 2vw 4vw;
@@ -341,30 +347,32 @@ body {
 }
 
 .container .form h3 {
-  color: #fff;
+  color: #000;
   font-size: 2vw;
   font-weight: 600;
   margin-bottom: 2vw;
 }
 
 .container .form input, textarea{
+  box-shadow: 0 15px 25px rgba(0, 0, 50, 0.2);
   border: 0;
   margin: 10px 0;
   padding: 20px;
   outline: none;
   background: rgba(255, 255, 255, 0.1);
   font-size: 16px;
-  color: #fff;
+  color: #000;
 }
 
 .container .form input::placeholder, textarea::placeholder{
-  color: #bbb;
+  color: #8b8b8b;
 }
 
 .container .form button{
   padding: 15px;
-  background: #fff;
-  color: #000000;
+  background: #2196f3;
+  box-shadow: 0 15px 25px rgba(0, 0, 50, 0.2);
+  color: #fff;
   font-size: 18px;
   border: 0;
   border-radius: 10px;

@@ -44,12 +44,16 @@ document.addEventListener("DOMContentLoaded", function() {
         
     }
 
-
-    for(let i = 0; i < contactus.children.length; i++){
-        contactus.children[i].addEventListener("click", function(){
-            window.location.href = "contact.html";
-        });
+    //verifify that it has children
+    if(contactus.children.length > 0){
+        for(let i = 0; i < contactus.children.length; i++){
+            contactus.children[i].addEventListener("click", function(){
+                window.location.href = "contact.html";
+            });
+        }
     }
+
+   
 
 
     document.addEventListener("click", function(e) {
