@@ -181,13 +181,15 @@ body {
 }
 
 .navbar .nav-links ul li a:hover{
-  color: #151515;
+  color: #fff;
   font-weight: 600;
+  font-size: larger;
 }
 
 .navbar .nav-links ul li.active a{
-  color: #151515;
+  color: #fff;
   font-weight: 600;
+  font-size: larger;
   
 }
 
@@ -347,7 +349,7 @@ body {
 }
 
 .container .form h3 {
-  color: #000;
+  color: #2196f3;
   font-size: 2vw;
   font-weight: 600;
   margin-bottom: 2vw;
