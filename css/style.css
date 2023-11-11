@@ -389,8 +389,9 @@ body {
 .containerFaq{
   width: 45%;
   min-width: 500px;
-  position:absolute;
-  transform: translate(50%, 10%);
+  position: relative;
+
+  margin: 60px auto;
   display: flex;
   flex-direction: column;
   
