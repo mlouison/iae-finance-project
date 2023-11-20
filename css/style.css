@@ -479,6 +479,31 @@ body {
   list-style-type: disc;
 }
 
+footer {
+  position: fixed; /* ou relative, selon vos besoins */
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+.img_footer {
+  display: flex;
+  justify-content: center;
+  background-color: #f7f7f7;
+  padding: 10px; /* Ajout de padding pour espacer les éléments */
+}
+
+.img_footer img {
+  margin: 0 10px; /* Espacement entre les images, ajustez selon vos besoins */
+  vertical-align: middle; /* Alignement vertical au milieu */
+  width: auto; /* Ajustez la largeur selon vos besoins */
+  height: 50px; /* Garantit que la hauteur est ajustée proportionnellement à la largeur */
+}
+
+
+
 @media screen and (max-width:900px){
   .index{
     height: 100px;
