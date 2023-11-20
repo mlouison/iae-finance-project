@@ -19,6 +19,13 @@ body {
   font-family: 'Poppins',sans-serif;
 }
 
+.index {
+  margin: 0;
+  padding: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%230099ff" fill-opacity="1" d="M0,192L60,186.7C120,181,240,171,360,186.7C480,203,600,245,720,234.7C840,224,960,160,1080,133.3C1200,107,1320,117,1380,122.7L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z" data-darkreader-inline-fill="" style="--darkreader-inline-fill: %23007acc; margin-top: 50px;"></path></svg>') no-repeat center center;
+  background-position: bottom 0px right 0px;
+}
+
 
 .title-box {
   text-align: center;
@@ -473,7 +480,9 @@ body {
 }
 
 @media screen and (max-width:900px){
-
+  .index{
+    height: 100px;
+  }
   .navbar{
     padding: 0;
   }
@@ -485,8 +494,12 @@ body {
     position: absolute;
     top: 40px;
     left: 30px;
+    font-size: 1.5em;
+    color: black;
   }
-
+  .main-text h1{
+    color: white;
+  }
   .nav-links {
     top: 0;
     left: 0;
@@ -501,36 +514,55 @@ body {
     margin-left: -100%;
     transition: 0.5s;
     font-size: x-large;
+    color: black;
   }
-
+.menu-hamburger {
+  z-index: 101;
+}
   
   .nav-links.mobile-menu{
     margin-left: 0;
+    color: black;
+    z-index: 100;
   }
   .nav-links ul{
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: black;
   }
 
   .navbar .nav-links ul li{
     margin: 20px 0;
     font-size: 1.2em;
+    color: black;
   }
 
+  .navbar .nav-links ul li a{
+    color: black;
+  }
+
+  .navbar .nav-links ul li.active a{
+    color: black;
+    font-weight: 600;
+    font-size: larger;
+    
+  }
   
   .button-container {
     flex-direction: column;
     /* Empile les boutons les uns au-dessus des autres */
     align-items: center;
     /* Centre les boutons verticalement */
+    
   }
 
   /* Ajustements de style pour les boutons sur les petits écrans */
   .button {
-    font-size: 3vw;
+    font-size: 5vw;
     /* Taille de police plus petite (ajustez selon vos besoins) */
-    width: 50%;
+    width: 80%;
+    margin: 25px;
   }
 
   .team-row {
@@ -545,10 +577,29 @@ body {
     flex: 100%;
     /* Sur les écrans étroits, passe à une disposition verticale à 100% de largeur */
   }
+  .leftPart {
+    margin-top: 90px;
+  }
 
   .paragraph h1 {
     font-size: 5vw;
     /* Augmente la taille de la police du titre h1 */
     padding-bottom: 1%;
+  }
+
+  .title-box img{
+    width: 90%;
+  }
+
+  .containerFaq{
+    margin-top: 150px;
+  }
+  .wrapper{
+    margin-left: 10px;
+    width: 65%;
+  }
+
+  .container .form h3{
+    font-size: 4vw;
   }
 }
