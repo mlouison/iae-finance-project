@@ -13,6 +13,9 @@
   list-style: none;
 }
 
+.orange{
+  color: #FE9A01;
+}
 
 body {
   background: #f7f7f7;
@@ -95,11 +98,14 @@ body {
 
 .profile-box small {
   font-size: 14px;
-  color: #555;
+  color: #FE9A01;
   height: 100px;
   
 }
 
+button i {
+  color: #FE9A01;
+}
 
 
 .main-text {
@@ -125,7 +131,7 @@ body {
 
 .main-text h1 {
   margin-top: 50px;
-  color: #000;
+  color: #FE9A01;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -285,14 +291,14 @@ body {
 
 .button {
   background-color: white;
-  border: 2px solid black;
+  border: 2px solid #FE9A01;
   border-radius: 10px;
   padding: 10px 20px;
   text-align: center;
   font-size: 2vw;
   text-decoration: none;
   display: inline-block;
-  color: black;
+  color: #FE9A01;
   margin: 5px;
   /* Espacement entre les boutons dans la même rangée */
   width: 30%;
@@ -522,7 +528,7 @@ footer {
     top: 40px;
     left: 30px;
     font-size: 1.5em;
-    color: black;
+    color: #FE9A01;
   }
   .main-text h1{
     color: white;

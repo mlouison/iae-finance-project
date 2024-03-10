@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
         toggles[i].addEventListener("click", function(){
             if(parseInt(contentDiv[i].style.height) != contentDiv[i].scrollHeight){
                 contentDiv[i].style.height = contentDiv[i].scrollHeight + "px";
-                toggles[i].style.color ="#0084e9";
+                toggles[i].style.color ="#FE9A01";
                 icons[i].classList.remove("fa-plus");
                 icons[i].classList.add("fa-minus");
             }else{
